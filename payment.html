@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voucher Bot Payment</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon Ethereum -->
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" type="image/svg+xml">
+
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>💎 Voucher Telegram Bot Payment Method ✈️</h1>
+  </header>
+
+  <!-- Payment Section -->
+  <section class="payment-section">
+    <form class="payment-form" id="paymentForm">
+      
+      <!-- Ethereum Address -->
+      <label for="eth-address">Pay $100 worth of Ethereum on this address:</label>
+      <input type="text" id="eth-address" value="0x1234567890abcdef1234567890abcdef12345678" readonly>
+
+      <!-- Telegram Number -->
+      <label for="telegram">Enter Your Telegram Number:</label>
+      <input type="text" id="telegram" placeholder="@yourusername" required>
+
+      <!-- Checkbox -->
+      <div class="checkbox-container">
+        <input type="checkbox" id="confirmPayment">
+        <label for="confirmPayment">I confirm that I sent the payment</label>
+      </div>
+
+      <button type="submit" class="btn" id="confirmBtn">Confirm Payment</button>
+      <a href="index.html" class="btn home-btn">Go to Home</a>
+    </form>
+  </section>
+
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    const paymentForm = document.getElementById('paymentForm');
+    const confirmCheckbox = document.getElementById('confirmPayment');
+
+    paymentForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // prevent default form submit
+
+      if (!confirmCheckbox.checked) {
+        Swal.fire({
+          title: '⚠️ Payment Not Confirmed',
+          text: 'Please pay first and confirm before submitting.',
+          icon: 'warning',
+          confirmButtonText: 'Okay'
+        });
+      } else {
+        Swal.fire({
+          title: '✅ Request Received',
+          text: 'We have received your request. We will verify it and add you soon.',
+          icon: 'success',
+          confirmButtonText: 'Okay'
+        }).then(() => {
+          // Optional: clear form after success
+          paymentForm.reset();
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
+
