@@ -1,98 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Voucher-bot</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta
-      name="google-site-verification"
-      content="yhqv4UozT7J5G582CqCSYMAfI-rTFj75I5MX2rnKpOU"
-    />
-    <link
-      rel="icon"
-      href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
-      type="image/svg+xml"
-    />
-    <!-- live track -->
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XLJ7J4BR5V"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voucher-bot</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="google-site-verification" content="yhqv4UozT7J5G582CqCSYMAfI-rTFj75I5MX2rnKpOU" />
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" type="image/svg+xml" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLJ7J4BR5V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-XLJ7J4BR5V");
+  </script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="page-header">
+    <h1>💎 Voucher ✈️Telegram Bot Price List</h1>
+  </header>
 
-      gtag("config", "G-XLJ7J4BR5V");
-    </script>
-  </head>
-  <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Voucher Bot Pricing</title>
-        <link rel="stylesheet" href="style.css" />
-      </head>
-      <body>
-        <!-- Header Section -->
-        <header class="page-header">
-          <h1>💎 Voucher ✈️Telegram Bot Price List</h1>
-        </header>
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-container">
+      <!-- Normal Plan -->
+      <div class="pricing-card popular">
+        <h3>Normal Plan</h3>
+        <p class="price">49$ = ETH</p>
+        <ul>
+          <li>✔ Access to bot</li>
+          <li>✔ Payment by Ethereum</li>
+          <li>✔ For 1 year</li>
+        </ul>
+        <button class="stock-out">Stock Out</button>
+        <a href="#" onclick="alert('Stock out')" class="btn">Choose Normal</a>
+      </div>
 
-        <!-- Pricing Section -->
-        <section class="pricing-section">
-          <h2>Choose Your Plan</h2>
-          <div class="pricing-container">
-            <!-- card 0 -->
+      <!-- Basic Plan -->
+      <div class="pricing-card">
+        <h3>Basic Plan</h3>
+        <p class="price">99$ = ETH</p>
+        <ul>
+          <li>✔ Access to bot</li>
+          <li>✔ Telegram Support</li>
+          <li>✔ Lifetime Access</li>
+        </ul>
+        <a href="payment.html" class="btn">Choose Basic</a>
+      </div>
 
-            <!-- Card 2 -->
-            <div class="pricing-card popular">
-              <h3>Normal plan</h3>
-              <p class="price">49$ = ETH</p>
-              <ul>
-                <li>✔ Access to bot</li>
-                <li>✔ payment by Ethereum</li>
-                <li>✔ for 1 year</li>
-                <button class="stock-out">stock out</button>
-              </ul>
-              <a href="" onclick="alert('stock out')" class="btn"
-                >Choose Normal</a
-              >
-            </div>
+      <!-- Premium Plan -->
+      <div class="pricing-card popular">
+        <h3>Premium Plan</h3>
+        <p class="price">99$ = ETH</p>
+        <ul>
+          <li>✔ BD supplier</li>
+          <li>✔ Payment by Bkash</li>
+          <li>✔ We will support it as long as it exists</li>
+        </ul>
+        <a href="payment.html" class="btn">Choose Premium</a>
+      </div>
+    </div>
+  </section>
 
-            <!-- Card 1 -->
-            <div class="pricing-card">
-              <h3>Basic Plan</h3>
-              <p class="price">99$ = ETH</p>
-              <ul>
-                <li>✔ Access to bot</li>
-                <li>✔ Telegram Support</li>
-                <li>✔ Lifetime Access</li>
-              </ul>
-              <a href="payment.html" class="btn">Choose Basic</a>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="pricing-card popular">
-              <h3>Premium Plan</h3>
-              <p class="price">99$ = ETH</p>
-              <ul>
-                <li>✔ BD supplier</li>
-                <li>✔ payment by Bkash</li>
-                <li>✔ we will support it as long as it exists.</li>
-              </ul>
-              <a href="payment.html" class="btn">Choose Premium</a>
-            </div>
-          </div>
-        </section>
-        <script src="app.js"></script>
-      </body>
-    </html>
-  </body>
+  <script src="app.js"></script>
+</body>
 </html>
