@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voucher Bot Payment</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Favicon Ethereum -->
+
+  <!-- Favicon Telegram -->
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" type="image/svg+xml">
 
   <!-- SweetAlert2 CSS -->
@@ -24,11 +25,14 @@
       
       <!-- Ethereum Address -->
       <label for="eth-address">Pay $100 worth of Ethereum on this address:</label>
-       <div class="e-address">copy address ERC20 : 0x321f503a63e961c2debb24ce32ef68f679445153</div>
+      <div class="e-address">copy address ERC20: 0x321f503a63e961c2debb24ce32ef68f679445153</div>
 
-      <!-- Telegram Number -->
+      <!-- Telegram Number with Logo -->
       <label for="telegram">Telegram username:</label>
-      <input type="text" id="telegram" placeholder="@yourusername" required>
+      <div class="telegram-input-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo" class="telegram-logo">
+        <input type="text" id="telegram" placeholder="@yourusername" required>
+      </div>
 
       <!-- Checkbox -->
       <div class="checkbox-container">
@@ -65,7 +69,6 @@
           icon: 'success',
           confirmButtonText: 'Okay'
         }).then(() => {
-          // Optional: clear form after success
           paymentForm.reset();
         });
       }

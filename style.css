@@ -123,9 +123,7 @@ body {
   }
 }
 
-
-.stock-out
-{
+.stock-out {
   padding: 1rem;
   color: #f5f7fa;
   background-color: rgb(248, 5, 5);
@@ -134,9 +132,7 @@ body {
   border-radius: 10px;
 }
 
-
-/* payment */
-
+/* Payment Section */
 .payment-section {
   display: flex;
   justify-content: center;
@@ -191,11 +187,23 @@ body {
   background: #45a049;
 }
 
-.e-address
-{
-   word-wrap: break-word;      /* long word break kore next line e niye jai */
-  overflow-wrap: break-word;  /* word-wrap er alternative */
-  white-space: normal;    
+.e-address {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Telegram input container */
+.telegram-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.telegram-logo {
+  width: 24px;
+  height: 24px;
 }
 
 /* Responsive */
