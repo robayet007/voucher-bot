@@ -180,6 +180,13 @@ body {
   background: #45a049;
 }
 
+.e-address
+{
+   word-wrap: break-word;      /* long word break kore next line e niye jai */
+  overflow-wrap: break-word;  /* word-wrap er alternative */
+  white-space: normal;    
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .payment-form {
